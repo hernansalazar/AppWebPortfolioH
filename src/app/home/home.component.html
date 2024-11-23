@@ -12,10 +12,21 @@
         </div>
         <!--Featured Project-->
         <div class="col-lg shadow border m-1">
+        
             <div class="text-center">
-                <h2>Featured Project</h2>
+                <h2>Featured Experience</h2>
                 <h4>{{featureProject.name}}</h4>
             </div>
+
+            <carousel>
+                <div *ngFor="let picture of featureProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+            
+            <p class="mt-2">{{featureProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        
         </div>
     </div>
 </div>
