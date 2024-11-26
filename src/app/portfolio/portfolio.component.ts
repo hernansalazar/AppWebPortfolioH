@@ -83,7 +83,11 @@ export class PortfolioComponent implements OnInit {
       this.filtering = false;
     }
 
-    this.projects = this.projectService.getProjectsByFilter(filterTags);
+    if(this.filtering){
+      this.projects = this.projectService.getProjectsByFilter(filterTags);
+    }else{
+      this.projects = this.projectService.getProjects();
+    }
   }
 
   resetFilters() {

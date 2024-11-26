@@ -38,6 +38,8 @@ testem.log
 /typings
 /src/assets/Hernan.jpeg
 /src/assets/*.png
+/src/assets/*.docx
+/src/assets/*.pdf
 
 # System files
 .DS_Store

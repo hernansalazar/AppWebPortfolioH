@@ -1,1 +1,124 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Development Analyst</h2>
+                    <h3 class="text-primary">TICNOW</h3>
+                    <ul>
+                        <li>I participated in the development and implementation of new application functionalities for 4 of the company's main clients, both frontend and backend using Java, Spring, Javascript, Typescript and Angular.</li>
+                        <li>I provided level 3 support in Java, Spring and Javascript for 10 company's clients, applying the required code fixes to guarantee the stability of the application.</li>
+                        <li>I created 20 stored procedures and more than 40 data base scripts for Oracle and PostgreSQL Databases. These are used daily by the company's clients for report generation, data erasure, and image transfer to external repositories, among others.</li>
+                        <li>I collaborated in the definition of the new product road map, which is expected to benefit more than 350000 users, and process more than 200 million transactions monthly.</li>
+                        <li>I applied continuous integration and continuous deployment.</li>
+                        <li>I worked under the SCRUM agile framework.</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Application Developer</h2>
+                    <h3 class="text-primary">Coomeva Emergencia Médica</h3>
+                    <ul>
+                        <li>I designed and developed 3 new functionalities for Java backend services and 1 new functionality for Javascript frontend services.</li>
+                        <li>I developed 10 code fixes using Java and Spring to ensure application stability and availability to over 35,000 customers.</li>
+                        <li>I developed 5 stored procedures and 15 Oracle data base scripts. These are used daily by the internal company areas for analysis, report generation, and strategic decision-making.</li>
+                        <li>I automated 5 end-of-day processes, allowing the elimination of manual tasks and thus improving the efficiency of the work team.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor's of System Engineering</h2>
+                    <h3 class="text-primary">Universidad Cooperativa</h3>
+                    <ul>
+                        <li>Graduated in 2010</li>
+                        <li>Graduated with a 4.2 GPA</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor's of System Engineering</h2>
+                    <h3 class="text-primary">Information Systems Technologist</h3>
+                    <ul>
+                        <li>Graduated in 2003</li>
+                        <li>Graduated with a 4.4 GPA</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                <h3 class="text-primary">Project Management Professional</h3>
+                <ul>
+                    <li>Obtained June 2016</li>
+                    <li>Credential # 1937261</li>
+                </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkilsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skils</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkilsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkilsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;" >
+                    <div class="col">
+                        <h3>Programming Langauages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>PlSql</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Spring Tool  Suite</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Data Bases:</h3>
+                        <ul>
+                            <li>Oracle</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Tools:</h3>
+                        <ul>
+                            <li>Datadog</li>
+                            <li>AWS Pipelines</li>
+                        </ul>
+                    </div>
+                </div>    
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
